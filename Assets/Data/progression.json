@@ -1,0 +1,11 @@
+{
+  "levelCap": 5,
+  "xpBase": 60,
+  "xpExponent": 1.5,
+  "talentResetGold": 100,
+  "talents": [
+    { "id": "heavy_hands", "displayName": "Heavy Hands", "tree": "melee", "effect": "MeleeDamage", "valuePerRank": 0.10, "maxRank": 3 },
+    { "id": "keen_edge", "displayName": "Keen Edge", "tree": "ranged", "effect": "RangedDamage", "valuePerRank": 0.15, "maxRank": 3 },
+    { "id": "battle_rhythm", "displayName": "Battle Rhythm", "tree": "special", "effect": "SpecialCooldown", "valuePerRank": 0.08, "maxRank": 3 }
+  ]
+}
