@@ -1,7 +1,7 @@
 # Game Design Document
 
 Working title: TBD (owner decision)
-Last updated: 2026-11-24
+Last updated: 2026-11-26
 
 ## 1. Summary
 
@@ -21,8 +21,8 @@ points, and chase gear that you refine into stronger versions.
 
 | Area | Decision |
 |---|---|
-| Engine | Unity 6 LTS, URP, C# |
-| Platforms | Android first, iOS after via cloud Mac build |
+| Engine | Unity 6.3 LTS (6000.3), URP, C# |
+| Platforms | Phone is the target: Android first, iOS after via cloud Mac build. A paid PC (Steam) edition is a possible later release, not a lead platform |
 | Orientation | Landscape |
 | Business model | Free to play, rewarded ads plus in-app purchases |
 | Art | Custom style, pipeline TBD; greybox until decided |
@@ -41,6 +41,22 @@ points, and chase gear that you refine into stronger versions.
   - **Dodge**: short dash with brief invulnerability, limited by stamina.
 - Soft lock-on: attacks aim at the nearest enemy in front of the hero. No
   manual aiming is required.
+
+### Gamepad and keyboard
+
+The game is designed for touch. Gamepad and keyboard are also supported so
+it can be played in the editor and in Windows builds during development,
+and so a PC edition stays cheap later. All three feed the same five
+actions; nothing may need more than the touch layout offers.
+
+| Action | Touch | Gamepad | Keyboard and mouse |
+|---|---|---|---|
+| Move | Left virtual stick | Left stick | W A S D |
+| Look | Drag right half of screen | Right stick | Mouse |
+| Melee | Melee button | X / Square | Left mouse button |
+| Ranged (hold to charge) | Ranged button | Right trigger | Right mouse button |
+| Special | Special button | Y / Triangle | Q |
+| Dodge | Dodge button | A / Cross | Space |
 
 ## 5. Classes
 
@@ -130,11 +146,13 @@ In scope:
 
 - Warrior only.
 - One arena-style room, then a three-room dungeon with a boss.
-- Three enemies: Grunt, Archer, Brute.
+- Three enemies: Grunt, Archer, Brute. The boss is The Warden, a large
+  Brute-style enemy.
 - Melee combo, thrown axe, both special options, dodge.
 - XP and levels 1 to 5 with three working talents.
 - One weapon that drops, can be equipped, and refined to +3.
 - HUD: health, stamina, cooldowns, touch controls.
+- Gamepad and keyboard input alongside touch (section 4).
 - Greybox art: capsules and simple shapes with clear hit feedback (hit
   pause, flash, knockback, camera shake, damage numbers).
 - Runs on a mid-range Android phone at 60 fps.

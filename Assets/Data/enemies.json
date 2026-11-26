@@ -1,0 +1,32 @@
+{
+  "enemies": [
+    {
+      "id": "grunt", "displayName": "Grunt", "role": "grunt",
+      "maxHealth": 60, "power": 8, "armor": 0,
+      "poise": 30, "poiseRecoverDelay": 3, "staggerDuration": 0.6,
+      "moveSpeed": 3.5, "attackRange": 1.6, "attackWindup": 0.4, "attackCooldown": 1.5,
+      "xp": 10
+    },
+    {
+      "id": "archer", "displayName": "Archer", "role": "archer",
+      "maxHealth": 40, "power": 12, "armor": 0,
+      "poise": 25, "poiseRecoverDelay": 3, "staggerDuration": 0.8,
+      "moveSpeed": 3.0, "attackRange": 12, "attackWindup": 0.8, "attackCooldown": 2.5,
+      "xp": 14
+    },
+    {
+      "id": "brute", "displayName": "Brute", "role": "brute",
+      "maxHealth": 260, "power": 28, "armor": 60,
+      "poise": 100, "poiseRecoverDelay": 3, "staggerDuration": 1.2,
+      "moveSpeed": 2.0, "attackRange": 2.2, "attackWindup": 1.1, "attackCooldown": 3.0,
+      "xp": 40
+    },
+    {
+      "id": "warden", "displayName": "The Warden", "role": "boss",
+      "maxHealth": 900, "power": 32, "armor": 40,
+      "poise": 160, "poiseRecoverDelay": 4, "staggerDuration": 1.5,
+      "moveSpeed": 2.6, "attackRange": 2.8, "attackWindup": 0.9, "attackCooldown": 2.2,
+      "xp": 150
+    }
+  ]
+}

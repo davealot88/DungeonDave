@@ -1,6 +1,21 @@
-# Starter kit
+# DungeonDave
 
-Drop everything in this folder into the root of the game's repo.
+Third-person medieval dungeon slasher for phones. Design is in `docs/GDD.md`.
+
+## Code layout
+
+| Path | What it is |
+|---|---|
+| `Assets/Scripts/Core` | Game rules in plain C#, no Unity dependency |
+| `Assets/Scripts/Game` | Unity-facing code (not started) |
+| `Assets/Data` | All balance numbers, as JSON |
+| `Assets/Tests/EditMode` | Rule tests; run in Unity's Test Runner or with `dotnet` |
+| `tools/` | Projects that build and test the rules without opening Unity |
+
+To run the tests without Unity (needs the .NET 8 SDK): `dotnet test tools/CoreTests`.
+It also loads the real files in `Assets/Data` and checks the slice's balance.
+
+# Starter kit
 
 ## What is here
 

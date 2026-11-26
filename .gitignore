@@ -1,0 +1,33 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.unityproj
+*.apk
+*.aab
+*.unitypackage
+crashlytics-build.properties
+.vs/
+.idea/
+.vscode/
+
+# Keep the out-of-Unity test projects
+!tools/**/*.csproj
+tools/**/bin/
+tools/**/obj/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+{
+  "maxRefineLevel": 3,
+  "refineStatPerLevel": 0.08,
+  "refineGoldBase": 100,
+  "refineGoldExponent": 1.5,
+  "refineMaterialsPerLevel": 2,
+  "items": [
+    {
+      "id": "iron_sword", "displayName": "Iron Sword", "slot": "weapon", "rarity": "common", "classId": "warrior",
+      "stats": { "power": 10, "maxHealth": 0, "armor": 0, "critChance": 0, "critDamage": 0, "cooldownReduction": 0 }
+    }
+  ],
+  "loot": { "weaponDropChance": 0.35, "weaponDropId": "iron_sword", "clearXp": 60, "goldMin": 40, "goldMax": 80, "materialsMin": 1, "materialsMax": 3 }
+}
