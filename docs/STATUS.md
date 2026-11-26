@@ -1,6 +1,6 @@
 # Status
 
-Last updated: 2026-11-25
+Last updated: 2026-11-26
 
 ## Phase
 
@@ -49,13 +49,21 @@ Vertical slice, step 1 of 4: rules done, nothing playable yet.
 2. Unity-facing layer under `Assets/Scripts/Game`: data loading, hero
    controller, follow camera, soft lock-on, enemy AI for the four enemies.
 3. Editor script that builds the greybox arena scene.
-4. Touch controls and HUD.
-5. First Android build to David's phone, then his playtest.
+4. Input: touch controls plus gamepad and keyboard (GDD section 4), and
+   the HUD.
+5. David plays it in the editor or a Windows build with a gamepad.
+6. First Android build to a personal Android phone, then the real
+   playtest. Combat feel is not signed off until this happens.
 
 ## Waiting on David
 
-- Unity 6.3 LTS installed, and the exact editor version number.
-- Which Android phone is the test device.
+- Unity 6.3 LTS (6000.3.29f1) installed with Android Build Support.
+- Repo cloned to the Windows PC.
+- Merge pull request 1 (Core rules), or tell the PM to.
+- A personal Android phone for testing. The Note 20 5G is a company phone
+  and is off limits. Not urgent; needed before the first real playtest.
+- Already in hand: Apple developer account (from another app), so iOS
+  later needs only the cloud Mac build, not a new membership.
 - Art pipeline choice (GDD section 12). Not blocking the slice.
 - Audience and age rating.
 - Working title.

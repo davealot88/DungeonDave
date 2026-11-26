@@ -31,3 +31,9 @@ One line per decision. Newest at the bottom.
 | 2026-11-25 | Clearing a dungeon pays bonus XP on top of kill XP; a failed run keeps kill XP only | GDD section 7; failure should still feel like progress | PM |
 | 2026-11-25 | Rules also build and test outside Unity (tools/) | Lets the PM verify changes without the editor | PM |
 | 2026-11-25 | PM wrote the first Core pass directly; a separate reviewer agent checked it | Agent definitions were missing from the repo; review step was kept | PM |
+| 2026-11-26 | Stay on Unity 6.3 LTS (6000.3.29f1), not the 6.6 update release | Fixes through December 2027 with no forced version hops; nothing in 6.6 is needed | PM, David agreed |
+| 2026-11-26 | Phone stays the target platform; Steam is a possible later paid edition, not the lead | Controls, performance and the ad-based model are all built around phones | David |
+| 2026-11-26 | Add gamepad and keyboard support alongside touch | Lets David play in the editor and Windows builds; keeps a PC edition cheap | David |
+| 2026-11-26 | Bindings: X melee, right trigger ranged, Y special, A dodge; mouse buttons, Q and Space on keyboard | Mirrors the four-button touch arc one to one | PM |
+| 2026-11-26 | The Galaxy Note 20 5G is not the test device | It is a company phone; no developer mode on employer hardware | David |
+| 2026-11-26 | Early playtesting happens in the Unity editor and Windows builds until a personal Android is available | Does not block the slice; a real phone is still required before combat feel is signed off | PM |
