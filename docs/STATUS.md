@@ -4,22 +4,15 @@ Last updated: 2026-11-26
 
 ## Phase
 
-Vertical slice, step 1 of 4: rules done, nothing playable yet.
+Vertical slice, step 2 of 5: rules done and the Unity project opens.
+Nothing playable yet.
 
-## David's setup checklist (one time)
+## Setup (done)
 
-1. ~~Create a private GitHub repo.~~ Done. Still to do: clone it to the
-   Windows machine (GitHub Desktop is the easy way).
-2. ~~Copy the starter kit into the repo root.~~ Done, except the
-   `.claude/agents/` folder did not come through the web upload. Not
-   needed for now.
-3. Install Unity Hub, then **Unity 6.3 LTS** (6.0 LTS support ended
-   October 2026) with the Android Build Support module, including the
-   OpenJDK and Android SDK & NDK Tools options.
-4. Do **not** create a Unity project by hand. Tell the PM the exact editor
-   version the Hub shows; the PM adds the project files to the repo and
-   David opens it with "Add project from disk".
-5. Enable Developer Options and USB debugging on an Android phone.
+- Unity 6.3 LTS (6000.3.29f1) with Android Build Support installed.
+- Repo cloned to `C:\Dev\DungeonDave` (kept out of OneDrive on purpose).
+- Unity project lives in the repo root; opened from Unity Hub.
+- Xbox controller on the PC for playtesting.
 
 ## Done
 
@@ -37,29 +30,31 @@ Vertical slice, step 1 of 4: rules done, nothing playable yet.
   Archer, Brute, and The Warden as the slice boss), progression, gear.
 - Rules build and test without Unity: `dotnet test tools/CoreTests`.
 
+- **Unity project** in the repo: URP, landscape, input and test packages.
+  The 44 rule tests that live under `Assets/Tests` pass inside Unity
+  (the other 15 check the data files and run only with `dotnet`).
+- **Editor helpers** (`Assets/Editor`): compile results and test results are
+  written to `Logs/claude`, and the PM can ask the open editor to refresh or
+  run tests. Menu: DungeonDave > Run Rule Tests.
+
 ## Not proven yet
 
-- Nothing has run inside Unity. The data classes are shaped for Unity's
-  JSON loader but that load has not been exercised.
+- The data files have not been loaded through Unity's own JSON loader yet.
 - No number here has been felt on a phone. All balance is a first guess.
 
 ## Next
 
-1. Unity project files in the repo (needs David's editor version).
-2. Unity-facing layer under `Assets/Scripts/Game`: data loading, hero
+1. Unity-facing layer under `Assets/Scripts/Game`: data loading, hero
    controller, follow camera, soft lock-on, enemy AI for the four enemies.
-3. Editor script that builds the greybox arena scene.
-4. Input: touch controls plus gamepad and keyboard (GDD section 4), and
+2. Editor script that builds the greybox arena scene.
+3. Input: touch controls plus gamepad and keyboard (GDD section 4), and
    the HUD.
-5. David plays it in the editor or a Windows build with a gamepad.
-6. First Android build to a personal Android phone, then the real
+4. David plays it in the editor or a Windows build with a gamepad.
+5. First Android build to a personal Android phone, then the real
    playtest. Combat feel is not signed off until this happens.
 
 ## Waiting on David
 
-- Unity 6.3 LTS (6000.3.29f1) installed with Android Build Support.
-- Repo cloned to the Windows PC.
-- Merge pull request 1 (Core rules), or tell the PM to.
 - A personal Android phone for testing. The Note 20 5G is a company phone
   and is off limits. Not urgent; needed before the first real playtest.
 - Already in hand: Apple developer account (from another app), so iOS

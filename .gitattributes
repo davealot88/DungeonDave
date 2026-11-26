@@ -1,0 +1,26 @@
+# Let git normalise line endings so Windows and other machines agree.
+* text=auto
+
+# Unity files that merge as text
+*.cs text diff=csharp
+*.meta text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.mat text eol=lf
+*.anim text eol=lf
+*.controller text eol=lf
+*.asmdef text eol=lf
+*.inputactions text eol=lf
+*.json text
+
+# Binary
+*.png binary
+*.jpg binary
+*.psd binary
+*.fbx binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.ttf binary
+*.otf binary

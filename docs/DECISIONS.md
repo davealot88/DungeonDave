@@ -37,3 +37,7 @@ One line per decision. Newest at the bottom.
 | 2026-11-26 | Bindings: X melee, right trigger ranged, Y special, A dodge; mouse buttons, Q and Space on keyboard | Mirrors the four-button touch arc one to one | PM |
 | 2026-11-26 | The Galaxy Note 20 5G is not the test device | It is a company phone; no developer mode on employer hardware | David |
 | 2026-11-26 | Early playtesting happens in the Unity editor and Windows builds until a personal Android is available | Does not block the slice; a real phone is still required before combat feel is signed off | PM |
+| 2026-11-26 | Unity project settings copied from a fresh Universal 3D template made by the same editor version | Guarantees settings and package versions match 6000.3.29f1 instead of hand-writing them | PM |
+| 2026-11-26 | Project locked to landscape; placeholder app ID com.dungeondave.game | GDD orientation; the real ID waits for the working title and must be set before any store upload | PM |
+| 2026-11-26 | Editor scripts write compile and test results to Logs/claude and accept simple requests from a file there | The PM cannot launch Unity; this lets it see errors and run tests without David pasting output | PM |
+| 2026-11-26 | David's PC folder (C:\Dev\DungeonDave) is the working copy; David commits and pushes with GitHub Desktop | Unity generates files locally, so one working copy avoids two diverging ones | PM |
